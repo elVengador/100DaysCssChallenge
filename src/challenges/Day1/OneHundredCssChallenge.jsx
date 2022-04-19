@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Frame } from '../../components/Frame'
-
 export const OneHundredCssChallenge = () => {
     const Frame = styled.div`
     position: absolute;
