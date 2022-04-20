@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { OneHundredCssChallenge } from '../challenges/Day1/OneHundredCssChallenge'
+import { MenuIcon } from '../challenges/Day2/MenuIcon'
 
 const challenges = [
     {
         name: '100CssChallenge',
         label: '1',
         component: <OneHundredCssChallenge />
+    },
+    {
+        name: 'MenuIcon',
+        label: '2',
+        component: <MenuIcon />
     },
 ]
 
@@ -15,7 +21,8 @@ export const Home = () => {
     const HomeWrapper = styled.div`
         width: 100vw;
         height: 100vh;
-        background-color: #363636;;
+        /* background-color: #363636; */
+        background-color: #fff;
     `
 
     const HomeHeader = styled.header`

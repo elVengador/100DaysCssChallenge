@@ -1,0 +1,181 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #3FAF82;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.control {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bar {
+    width: 80px;
+    height: 8px;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px #585858;
+}
+
+.top-bar.menu {
+    transform: translateY(14px);
+    animation: topBarMenu 1 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+.top-bar.close {
+    animation: topBarClose 1 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+.middle-bar.menu {
+    transform: translateY(34px);
+    animation: middleBarMenu 1 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+.middle-bar.close {
+    animation: middleBarClose 1 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+.bottom-bar.menu {
+    transform: translateY(54px);
+    animation: bottomBarMenu 1 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+.bottom-bar.close {
+    animation: bottomBarClose 1 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes topBarClose {
+    0% {
+        transform: translateY(14px);
+    }
+
+    60% {
+        transform: translate(0, 34px);
+    }
+
+    85% {
+        transform: translate(0, 34px);
+    }
+
+    100% {
+        transform: translate(0, 34px) rotate(-45deg);
+    }
+}
+
+@keyframes middleBarClose {
+    0% {
+        transform: translateY(34px);
+    }
+
+    60% {
+        transform: translate(60%, 34px);
+    }
+
+    85% {
+        width: 0px;
+        transform: translate(60%, 34px);
+    }
+
+    100% {
+        width: 0px;
+        transform: translate(60%, 34px);
+    }
+}
+
+@keyframes bottomBarClose {
+    0% {
+        transform: translateY(54px);
+    }
+
+    60% {
+        transform: translate(0, 34px);
+    }
+
+    85% {
+        transform: translate(0, 34px);
+    }
+
+    100% {
+        transform: translate(0, 34px) rotate(45deg);
+    }
+}
+
+@keyframes topBarMenu {
+    0% {
+        transform: translate(0, 34px) rotate(-45deg);
+    }
+
+    15% {
+        transform: translate(0, 34px);
+    }
+
+    40% {
+        transform: translate(0, 34px);
+    }
+
+    100% {
+        transform: translateY(14px);
+    }
+}
+
+@keyframes middleBarMenu {
+    0% {
+        width: 0px;
+        transform: translate(60%, 34px);
+    }
+
+    15% {
+        width: 0px;
+        transform: translate(60%, 34px);
+    }
+
+    40% {
+        transform: translate(60%, 34px);
+    }
+
+    100% {
+        transform: translateY(34px);
+    }
+}
+
+@keyframes bottomBarMenu {
+    0% {
+        transform: translate(0, 34px) rotate(45deg);
+    }
+
+    15% {
+        transform: translate(0, 34px);
+    }
+
+    40% {
+        transform: translate(0, 34px);
+    }
+
+    100% {
+        transform: translateY(54px);
+    }
+}
