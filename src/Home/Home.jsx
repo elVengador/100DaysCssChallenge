@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { OneHundredCssChallenge } from '../challenges/Day1/OneHundredCssChallenge'
 import { MenuIcon } from '../challenges/Day2/MenuIcon'
+import { Pyramide } from '../challenges/Day3/Pyramide'
 
 const challenges = [
     {
@@ -13,6 +14,11 @@ const challenges = [
         name: 'MenuIcon',
         label: '2',
         component: <MenuIcon />
+    },
+    {
+        name: 'Pyramide',
+        label: '3',
+        component: <Pyramide />
     },
 ]
 

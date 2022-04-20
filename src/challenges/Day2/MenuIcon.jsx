@@ -7,7 +7,7 @@ export const MenuIcon = () => {
     const [showMenu, setShowMenu] = useState(true)
 
     return (
-        <div className='frame'>
+        <div className='frame' style={{ background: '#3FAF82' }}>
             <div className='center' onClick={() => {
                 console.log('set show menu')
                 setShowMenu(showMenu => !showMenu)
