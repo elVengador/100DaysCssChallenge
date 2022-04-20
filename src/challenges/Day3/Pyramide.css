@@ -35,6 +35,7 @@
     height: 124px;
     top: 0px;
     background-color: #7DDFFC;
+    animation: sky 4s infinite 0s;
 }
 
 .circle--sun {
@@ -85,11 +86,9 @@
     transform: translateY(58px);
     bottom: 56px;
     position: absolute;
-    /* width: 116px; */
     width: 100%;
     height: 58px;
     background-color: rgba(0, 0, 0, 0.2);
-    /* right: 32px; */
     clip-path: polygon(100% 35%, 17% 0, 82% 0);
 
 
@@ -104,6 +103,7 @@
     left: 0px;
     right: 0px;
     background-color: #F0DE75;
+    animation: sand 4s infinite 0s;
 
 
 }
@@ -130,6 +130,50 @@
     }
 }
 
+@keyframes sky {
+    0% {
+        background-color: #7DDFFC;
+    }
+
+    50% {
+        background-color: #7DDFFC;
+    }
+
+    65% {
+        background-color: #272C34;
+    }
+
+    90% {
+        background-color: #7DDFFC;
+    }
+
+    100% {
+        background-color: #7DDFFC;
+    }
+}
+
+@keyframes sand {
+    0% {
+        background-color: #F0DE75;
+    }
+
+    50% {
+        background-color: #F0DE75;
+    }
+
+    65% {
+        background-color: #272C34;
+    }
+
+    90% {
+        background-color: #F0DE75;
+    }
+
+    100% {
+        background-color: #F0DE75;
+    }
+}
+
 @keyframes pyramide-a-shadow {
     0% {
         border-bottom: 57px solid #F4F4F4;
@@ -139,12 +183,16 @@
         border-bottom: 57px solid #F4F4F4;
     }
 
-    40% {
+    50% {
         border-bottom: 57px solid #DDDADA;
     }
 
-    90% {
-        border-bottom: 57px solid #DDDADA;
+    65% {
+        border-bottom: 57px solid #272C34;
+    }
+
+    80% {
+        border-bottom: 57px solid #F4F4F4;
     }
 
     100% {
@@ -161,12 +209,16 @@
         border-bottom: 57px solid #DDDADA;
     }
 
-    40% {
-        border-bottom: 57px solid #DDDADA;
+    50% {
+        border-bottom: 57px solid #F4F4F4;
     }
 
-    90% {
-        border-bottom: 57px solid #F4F4F4;
+    65% {
+        border-bottom: 57px solid #272C34;
+    }
+
+    80% {
+        border-bottom: 57px solid #DDDADA;
     }
 
     100% {
@@ -191,15 +243,15 @@
         clip-path: polygon(50% 20%, 17% 0, 82% 0);
     }
 
-    70% {
+    60% {
         clip-path: polygon(15% 70%, 17% 0, 82% 0);
     }
 
-    80% {
+    65% {
         clip-path: polygon(0% 20%, 17% 0, 82% 0);
     }
 
-    90% {
+    70% {
         clip-path: polygon(100% 0%, 17% 0, 82% 0);
     }
 
