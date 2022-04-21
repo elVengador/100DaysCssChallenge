@@ -1,0 +1,15 @@
+<svg width="236" height="30" viewBox="0 0 236 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="2.87597" y1="10.0077" x2="42.876" y2="5.00771" stroke="#7BA2FF" stroke-width="2"/>
+<line x1="82.7805" y1="13.9756" x2="42.7805" y2="4.97559" stroke="#7BA2FF" stroke-width="2"/>
+<line x1="123.259" y1="2.96584" x2="82.2591" y2="13.9658" stroke="#7BA2FF" stroke-width="2"/>
+<line x1="123.196" y1="3.01942" x2="158.196" y2="10.0194" stroke="#7BA2FF" stroke-width="2"/>
+<line x1="158.437" y1="10.1005" x2="193.437" y2="27.1005" stroke="#7BA2FF" stroke-width="2"/>
+<line x1="192.786" y1="27.0233" x2="233.786" y2="18.0233" stroke="#7BA2FF" stroke-width="2"/>
+<circle cx="233" cy="18" r="3" fill="#7BA2FF"/>
+<circle cx="193" cy="27" r="3" fill="#7BA2FF"/>
+<circle cx="158" cy="10" r="3" fill="#7BA2FF"/>
+<circle cx="123" cy="3" r="3" fill="#7BA2FF"/>
+<circle cx="83" cy="13" r="3" fill="#7BA2FF"/>
+<circle cx="43" cy="5" r="3" fill="#7BA2FF"/>
+<circle cx="3" cy="10" r="3" fill="#7BA2FF"/>
+</svg>

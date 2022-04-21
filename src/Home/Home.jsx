@@ -4,6 +4,7 @@ import { OneHundredCssChallenge } from '../challenges/Day1/OneHundredCssChalleng
 import { MenuIcon } from '../challenges/Day2/MenuIcon'
 import { Pyramide } from '../challenges/Day3/Pyramide'
 import { Loading } from '../challenges/Day4/Loading'
+import { Statictics } from '../challenges/Day5/Statictics'
 
 const challenges = [
     {
@@ -25,6 +26,11 @@ const challenges = [
         name: 'Loading',
         label: '4',
         component: <Loading />
+    },
+    {
+        name: 'Statictics',
+        label: '5',
+        component: <Statictics />
     },
 ]
 

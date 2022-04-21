@@ -1,0 +1,128 @@
+.statictics--header {
+    width: 280px;
+    height: 60px;
+    padding: 10px 14px;
+    background-color: #F1BA64;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.statictics--header .info-lg {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.statictics--header .info-sm {
+    margin: 0px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.statictics--header .left {
+    text-align: left;
+}
+
+.statictics--header .right {
+    text-align: right;
+}
+
+.statictics--body {
+    width: 280px;
+    height: 160px;
+    padding: 10px 14px;
+    background-color: #fff;
+    color: #fff;
+}
+
+.statictics--body .leyends {
+    display: flex;
+    flex-direction: row-reverse;
+    color: #606060;
+    font-size: 9px;
+    column-gap: 20px;
+}
+
+.statictics--body .leyend-blue {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.statictics--body .leyend-red {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.statictics--body .leyend-blue::before {
+    display: block;
+    content: '';
+    width: 11px;
+    height: 3px;
+    background-color: #7BA2FF;
+}
+
+.statictics--body .leyend-red::before {
+    display: block;
+    content: '';
+    width: 11px;
+    height: 3px;
+    background-color: #FA7373;
+}
+
+.statictics--body .chart {
+    position: relative;
+    height: 120px;
+}
+
+.statictics--body .chart .chart-red {
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    top: 20px;
+}
+
+.statictics--body .chart .chart-blue {
+    position: absolute;
+    transform: translateX(50%);
+    right: 50%;
+    bottom: 26px;
+}
+
+.statictics--body .line {
+    width: 230px;
+    height: 24px;
+}
+
+.chart hr {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+    border: none;
+    height: 1px;
+}
+
+.chart hr.top-line {
+    top: 4px;
+}
+
+.chart hr.middle-line {
+    top: 46px;
+}
+
+.chart hr.bottom-line {
+    top: 88px;
+}
+
+.chart .days {
+    color: #606060;
+    width: 100%;
+    font-size: 9px;
+    position: absolute;
+    bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
