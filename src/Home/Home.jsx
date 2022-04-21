@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { OneHundredCssChallenge } from '../challenges/Day1/OneHundredCssChallenge'
 import { MenuIcon } from '../challenges/Day2/MenuIcon'
 import { Pyramide } from '../challenges/Day3/Pyramide'
+import { Loading } from '../challenges/Day4/Loading'
 
 const challenges = [
     {
@@ -19,6 +20,11 @@ const challenges = [
         name: 'Pyramide',
         label: '3',
         component: <Pyramide />
+    },
+    {
+        name: 'Loading',
+        label: '4',
+        component: <Loading />
     },
 ]
 
