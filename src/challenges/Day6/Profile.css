@@ -1,0 +1,86 @@
+.profile {
+    width: 320px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.profile--user {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px auto;
+
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.user--photo {
+    width: 82px;
+    height: 82px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+}
+
+.user--name {
+    color: #786450;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.user--profession {
+    color: #786450;
+    font-size: 11px;
+}
+
+.controls {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls--button {
+    width: 120px;
+    padding: 6px;
+    background-color: #fff;
+    color: #786450;
+    border: solid 1px #786450;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.profile--dashboard {
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    row-gap: 1px;
+}
+
+.dashboard-item {
+    background-color: #F5E8DF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-item--value {
+    color: #786450;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dashboard-item--title {
+    margin: 0px;
+    color: #786450;
+    font-size: 10px;
+    font-weight: 100;
+}

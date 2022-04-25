@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { OneHundredCssChallenge } from '../challenges/Day1/OneHundredCssChallenge'
 import { MenuIcon } from '../challenges/Day2/MenuIcon'
 import { Pyramide } from '../challenges/Day3/Pyramide'
 import { Loading } from '../challenges/Day4/Loading'
 import { Statictics } from '../challenges/Day5/Statictics'
+import { Profile } from '../challenges/Day6/Profile'
 
 const challenges = [
     {
@@ -31,6 +32,11 @@ const challenges = [
         name: 'Statictics',
         label: '5',
         component: <Statictics />
+    },
+    {
+        name: 'Profile',
+        label: '6',
+        component: <Profile />
     },
 ]
 
@@ -76,8 +82,8 @@ export const Home = () => {
         padding: 10px;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(10,30px);
-        grid-template-rows: repeat(10,30px);
+        grid-template-columns: repeat(10,35px);
+        grid-template-rows: repeat(10,35px);
         column-gap: 5px;
         row-gap: 5px;
         overflow-y: auto;
@@ -92,10 +98,18 @@ export const Home = () => {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #0091ff;
-        cursor: pointer;
+        background-color: #6d6d6d;
+        color: #fff;
+        ${props => props.title !== 'unknown' && css`
+                background-color: #1778e0;
+                cursor: pointer;
+            `
+        }
         &:hover {
-            background-color: #ff6a00;
+            ${props => props.title !== 'unknown' && css`
+                background-color: #ff6a00;
+                cursor: pointer;`
+        }
         }
     `
 
