@@ -25,8 +25,61 @@
     width: 82px;
     height: 82px;
     margin-bottom: 12px;
+    position: relative;
+    /* border: solid 2px #353; */
+    /* background-color: aquamarine; */
     border-radius: 50%;
+    cursor: pointer;
+    /* clip-path: circle(); */
 }
+
+.user--photo::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: solid 1px #786450;
+    border-right: solid 1px #fff;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+    right: 50%;
+    bottom: 50%;
+    transition: 2s;
+}
+
+.user--photo:hover::before {
+    transform: translate(50%, 50%) rotate(360deg);
+}
+
+
+.user--photo::after {
+    content: '';
+    width: 76px;
+    height: 76px;
+    position: absolute;
+    border: solid 1px #786450;
+    border-left: solid 1px #fff;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+    right: 41px;
+    bottom: 41px;
+    transition: 2s;
+}
+
+.user--photo:hover::after {
+    transform: translate(50%, 50%) rotate(-360deg);
+}
+
+.user--photo img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+    right: 41px;
+    bottom: 41px;
+}
+
 
 .user--name {
     color: #786450;
@@ -50,12 +103,18 @@
 
 .controls--button {
     width: 120px;
-    padding: 6px;
+    padding: 7px;
     background-color: #fff;
     color: #786450;
     border: solid 1px #786450;
     border-radius: 15px;
     font-weight: 600;
+}
+
+.controls--button:hover {
+    background-color: #786450;
+    color: #fff;
+    cursor: pointer;
 }
 
 .profile--dashboard {
@@ -70,6 +129,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.dashboard-item:hover {
+    background-color: #E1CFC2;
+    cursor: pointer;
 }
 
 .dashboard-item--value {

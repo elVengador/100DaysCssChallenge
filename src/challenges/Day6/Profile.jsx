@@ -18,7 +18,9 @@ export const Profile = () => {
             <div className='profile'>
                 <div className="profile--user">
                     <div className="user">
-                        <img src='/jessica-potter.jpg' className="user--photo"></img>
+                        <div className="user--photo">
+                            <img src='/jessica-potter.jpg' className=""></img>
+                        </div>
                         <div className="user--name">Jessica Potter</div>
                         <div className="user--profession">Virtual Artist</div>
                     </div>
