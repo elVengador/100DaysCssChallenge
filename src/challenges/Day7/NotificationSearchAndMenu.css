@@ -1,0 +1,117 @@
+.notification-wrapper {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+/* .notification {
+    
+} */
+
+.menu {
+    padding: 10px 0px;
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 50%;
+    top: 50%;
+    border-radius: 3px;
+    box-shadow: 6px 6px 6px rgba(52, 52, 52, 0.682);
+    background-color: rgb(79, 102, 125);
+}
+
+.menu--item {
+    color: rgb(141, 179, 211);
+    font-size: 14px;
+    padding: 15px;
+}
+
+.menu--item i {
+    margin-right: 10px;
+}
+
+.notifications {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 50%;
+    top: 50%;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.notifications--header {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(97, 154, 204);
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.menu-icon--top-line {
+    width: 21px;
+    height: 3px;
+    position: absolute;
+    top: 8px;
+    border-radius: 2px;
+    background-color: rgb(187, 223, 255);
+}
+
+.menu-icon--bottom-line {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    bottom: 8px;
+    border-radius: 2px;
+    background-color: rgb(187, 223, 255);
+}
+
+.menu-icon--dot {
+    width: 7px;
+    height: 7px;
+    top: 6px;
+    right: 0px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(187, 223, 255);
+}
+
+.header-title {
+    color: #fff;
+    font-weight: 600;
+    /* color: rgb(187, 223, 255); */
+    font-size: 15px;
+}
+
+.header-option {
+    color: rgb(187, 223, 255);
+    font-size: 22px;
+}
+
+.notifications--body {
+    padding: 12px 30px;
+}
+
+.notification {
+    padding: 10px 0px;
+}
+
+.notification .notification--time {
+    color: rgb(120, 120, 120);
+    font-size: 11px;
+}
+
+.notification .notification--content {
+    margin: 0px;
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+}

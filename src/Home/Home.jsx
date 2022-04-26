@@ -6,6 +6,7 @@ import { Pyramide } from '../challenges/Day3/Pyramide'
 import { Loading } from '../challenges/Day4/Loading'
 import { Statictics } from '../challenges/Day5/Statictics'
 import { Profile } from '../challenges/Day6/Profile'
+import { NotificationSearchAndMenu } from '../challenges/Day7/NotificationSearchAndMenu'
 
 const challenges = [
     {
@@ -37,6 +38,11 @@ const challenges = [
         name: 'Profile',
         label: '6',
         component: <Profile />
+    },
+    {
+        name: 'Notification, Search and Menu',
+        label: '7',
+        component: <NotificationSearchAndMenu />
     },
 ]
 
